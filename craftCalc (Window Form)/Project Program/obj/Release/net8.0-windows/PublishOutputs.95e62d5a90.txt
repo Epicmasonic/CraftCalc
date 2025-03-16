@@ -1,0 +1,5 @@
+C:\Users\Epicm\source\repos\Project Program\Project Program\bin\Release\net8.0-windows\app.publish\Project Program.exe
+C:\Users\Epicm\source\repos\Project Program\Project Program\bin\Release\net8.0-windows\app.publish\Project Program.dll
+C:\Users\Epicm\source\repos\Project Program\Project Program\bin\Release\net8.0-windows\app.publish\Project Program.deps.json
+C:\Users\Epicm\source\repos\Project Program\Project Program\bin\Release\net8.0-windows\app.publish\Project Program.runtimeconfig.json
+C:\Users\Epicm\source\repos\Project Program\Project Program\bin\Release\net8.0-windows\app.publish\Project Program.pdb
