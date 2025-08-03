@@ -1,9 +1,9 @@
 local files = {
   "craftCalc.lua",
-  "functions/overcomplated",
-  "functions/dataHandling",
-  "functions/uiBasic",
-  "functions/ui"
+  "functions/overcomplated.lua",
+  "functions/dataHandling.lua",
+  "functions/uiBasic.lua",
+  "functions/ui.lua"
 }
 
 for _, file in ipairs(files) do
