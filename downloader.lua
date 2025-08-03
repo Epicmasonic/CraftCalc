@@ -1,6 +1,6 @@
 local files = {
   "craftCalc.lua",
-  "functions/overcomplated.lua",
+  "functions/overcomplicated.lua",
   "functions/dataHandling.lua",
   "functions/uiBasic.lua",
   "functions/ui.lua"
