@@ -7,5 +7,6 @@ local files = {
 }
 
 for _, file in ipairs(files) do
+  fs.delete(" craftCalc/"..file)
   shell.run("wget https://raw.githubusercontent.com/Epicmasonic/craftCalc/main/craftCalc/"..file.." craftCalc/"..file)
 end
