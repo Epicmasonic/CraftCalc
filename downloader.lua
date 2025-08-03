@@ -1,9 +1,9 @@
 local files = {
   "craftCalc.lua",
-  "functions/uiBasic",
-  "functions/ui",
+  "functions/overcomplated",
   "functions/dataHandling",
-  "functions/overcomplated"
+  "functions/uiBasic",
+  "functions/ui"
 }
 
 for _, file in files do
