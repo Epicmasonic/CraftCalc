@@ -7,5 +7,5 @@ local files = {
 }
 
 for _, file in ipairs(files) do
-  shell.run("wget https://raw.githubusercontent.com/Epicmasonic/CraftCalc/main/craftCalc/"..file.." craftCalc/"..file)
+  shell.run("wget https://raw.githubusercontent.com/Epicmasonic/craftCalc/main/craftCalc/"..file.." craftCalc/"..file)
 end
