@@ -63,12 +63,25 @@ function viewMode()
 
     local pickedRecipe = pickRecipe(1)
 
+    if (not pickedRecipe) then
+        mainMenu()
+        return
+    end
+
     unfinished()
     mainMenu()
 end
 
 function pickRecipe(page, looped)
     local options, lastPage = data.pageTable(recipes, page)
+
+    if (#options == 0) then
+        ui.basic.clearScreen(1 / textSpeed)
+        ui.basic.slowPrint("You haven't added any recipes yet!", textSpeed, false)
+        ui.waitUntilKey()
+        return
+    end
+
     local finalPage = math.ceil((#recipes + 1) * 10) / 10
 
     if (looped) then
