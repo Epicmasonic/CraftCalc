@@ -1,7 +1,7 @@
 --- @diagnostic disable: undefined-global, undefined-field, lowercase-global
 
 local basic = require("functions.uiBasic")
-local customBios = require("functions.overcomplcated")
+local customBios = require("functions.overcomplicated")
 
 ---Asks the user to press any key
 function waitUntilKey()
@@ -237,4 +237,5 @@ return {
     limitedTextInput = limitedTextInput,
     numberInput = numberInput,
     basic = basic
+
 }
