@@ -103,20 +103,16 @@ function pickRecipe(page, looped)
         return recipes[options[picked]]
     elseif (picked == 11) then
         if (lastPage) then
-            pickRecipe(1, true)
+            return pickRecipe(1, true)
         else
-            pickRecipe(page + 1, true)
+            return pickRecipe(page + 1, true)
         end
-
-        return
     elseif (picked == 12) then
         if (page == 1) then
-            pickRecipe(finalPage, true)
+            return pickRecipe(finalPage, true)
         else
-            pickRecipe(page - 1, true)
+            return pickRecipe(page - 1, true)
         end
-
-        return
     end
 end
 
