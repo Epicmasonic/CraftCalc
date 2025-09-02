@@ -44,6 +44,7 @@ function mainMenu()
         craftMode()
         return
     else
+        ---@diagnostic disable-next-line: missing-parameter
         clearScreen()
         error("How did you do that?")
     end
