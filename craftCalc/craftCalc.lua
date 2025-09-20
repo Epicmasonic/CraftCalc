@@ -55,7 +55,7 @@ end
 function exitProgram()
     ui.basic.clearScreen(1 / textSpeed)
 
-    ui.basic.slowPrint("Have a good day!", textSpeed)
+    ui.basic.slowPrint("Have a good day!", textSpeed, true)
     ui.waitUntilKey()
 end
 
