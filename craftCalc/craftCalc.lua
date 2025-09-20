@@ -76,16 +76,17 @@ function viewMode()
 end
 
 function pickRecipe(page, looped)
-    local options, lastPage = data.pageTable(recipes, page)
+    local options = data.pageTable(recipes, page)
+    local recipeCount = data.tableLength(recipes)
 
-    if (#options == 0) then
+    local finalPage = math.ceil((recipeCount) / 10)
+
+    if (finalPage <= 0) then
         ui.basic.clearScreen(1 / textSpeed)
         ui.basic.slowPrint("You haven't added any recipes yet!", textSpeed, false)
         ui.waitUntilKey()
         return
     end
-
-    local finalPage = math.ceil((#recipes + 1) * 10) / 10
 
     if (looped) then
         --- @diagnostic disable-next-line: missing-parameter
@@ -107,7 +108,7 @@ function pickRecipe(page, looped)
     if (picked <= 10) then
         return recipes[options[picked]], options[picked]
     elseif (picked == 11) then
-        if (lastPage) then
+        if (page == finalPage) then
             return pickRecipe(1, true)
         else
             return pickRecipe(page + 1, true)
