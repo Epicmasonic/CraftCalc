@@ -18,7 +18,7 @@ end
 ---@return boolean result What the user picked, with true for yes and false for no
 function binaryInput()
     term.setTextColor(colors.lightGray)
-    print("\nY/N")
+    print("\nY / N")
     term.setTextColor(colors.white)
 
 	while(true) do
@@ -239,3 +239,4 @@ return {
     basic = basic
 
 }
+
