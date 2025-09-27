@@ -55,8 +55,10 @@ end
 function exitProgram()
     ui.basic.clearScreen(1 / textSpeed)
 
-    ui.basic.slowPrint("Have a good day!", textSpeed, true)
-    ui.waitUntilKey()
+    ui.basic.slowPrint("Are you sure you want to leave?", textSpeed, true)
+    if (not(ui.binaryInput())) then
+		mainMenu()
+	end
 end
 
 ---Lets the user view their added recipes
