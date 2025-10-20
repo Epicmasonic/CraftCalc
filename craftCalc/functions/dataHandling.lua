@@ -63,8 +63,8 @@ function pageTable(book, page)
 end
 
 return {
-    tableLength = tableLength,
     saveData = saveData,
     loadData = loadData,
+    tableLength = tableLength,
     pageTable = pageTable
 }

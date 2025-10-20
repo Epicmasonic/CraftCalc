@@ -19,6 +19,20 @@ function clearLine()
     term.clearLine()
 end
 
+function eatInput(textSpeed)
+    -- Start a short timer (for non-blocking wait)
+    local timer = os.startTimer(1 / textSpeed)
+
+    while true do
+        local event, param = os.pullEvent()
+        if event == "key" then
+            break
+        elseif event == "timer" and param == timer then
+            break
+        end
+    end
+end
+
 ---Slowly writes text to the screen
 ---@param text string Text to write
 ---@param textSpeed integer? How many characters to write per second (Default: 20)
@@ -99,5 +113,6 @@ return {
     slowWrite = slowWrite,
     slowPrint = slowPrint,
     cancellableSleep = cancellableSleep,
+    eatInput = eatInput,
     errorMessage = errorMessage
 }
