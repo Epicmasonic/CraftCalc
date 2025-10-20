@@ -201,15 +201,70 @@ end
 ---@param defaultNumber string? Number to start the user with
 ---@return integer input The inputed number
 function numberInput(defaultNumber)
-    while (true) do
-        local input = tonumber(limitedTextInput({"0","1","2","3","4","5","6","7","8","9"}, "Only numbers are allowed", defaultNumber))
+    ::start::
+    local input = tonumber(limitedTextInput({"0","1","2","3","4","5","6","7","8","9","."}, "Only numbers are allowed.", defaultNumber))
 
-        if (input == nil) then
-			basic.errorMessage("Input a number.")
-		else
-			return input
-		end
+    if (input == nil) then
+		basic.errorMessage("Input a number.")
+        basic.clearLine()
+        basic.clearLine()
+
+        goto start
+	end
+
+    return input
+end
+
+function itemInput()
+    ::start::
+    local input = limitedTextInput({"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ","_",":"}, "Input must be a valid Minecraft item ID.", defaultNumber)
+
+    if (select(2, string.gsub(input, ":", "")) > 1 or (string.match(input, "^:") or string.match(input, ":$"))) then
+    	basic.errorMessage("Input must be a valid Minecraft item ID.")
+        basic.clearLine()
+        basic.clearLine()
+
+        goto start
+	end
+
+	return toItemID(input)
+end
+
+function toItemID(item)
+    item = string.lower(item)
+    item = string.gsub(item, " ", "_")
+
+    if (select(2, string.gsub(item, ":", "")) == 0) then
+        item = "minecraft:"..item
     end
+
+    return item
+end
+
+function toItemName(item)
+    item = string.gsub(item, "^.*:", "")
+    item = string.gsub(item, "_", " ")
+    item = toTitleCase(item)
+    
+    return item
+end
+
+function toTitleCase(string)
+    local nonCapitalized = {"a", "an", "the", "of", "on", "in", "and", "but", "or"}
+
+    string = string.gsub(string, "(%a)([%w_]*)", function(first, rest)
+        local word = first .. rest
+
+        for _, badWord in ipairs(nonCapitalized) do
+            if (string.lower(word) == badWord) then
+                return word
+            end
+        end
+
+        return string.upper(first) .. rest
+    end)
+
+    return string
 end
 
 ---Writes out a whole file
@@ -229,14 +284,21 @@ end
 
 return {
     unfinished = unfinished,
+
     waitUntilKey = waitUntilKey,
     binaryInput = binaryInput,
     listInput = listInput,
     pagedListInput = pagedListInput,
+
     textInput = textInput,
     limitedTextInput = limitedTextInput,
     numberInput = numberInput,
+    itemInput = itemInput,
+
+    toTitleCase = toTitleCase,
+    toItemID = toItemID,
+    toItemName = toItemName,
+
     basic = basic
 
 }
-
