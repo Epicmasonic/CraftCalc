@@ -187,7 +187,7 @@ function showRecipe(recipe, name)
     if (#recipe["Outputs"] > 1) then
         for i = 1, #recipe["Outputs"] - 1, 1 do
             item = recipe["Outputs"][i]
-            ui.basic.slowPrint("- "..toItemName(item["Item"]).." x"..toItemName(item["Count"]), textSpeed, true)
+            ui.basic.slowPrint("- "..toItemName(item["Item"]).." x"..item["Count"], textSpeed, true)
         end
     end
     finalItem = recipe["Outputs"][#recipe["Outputs"]]
