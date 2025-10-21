@@ -1,1 +1,218 @@
-
+{
+  [ "(Vanilla Pack) Craft Oak Fence" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_fence",
+        Count = 3,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:oak_planks",
+        Count = 4,
+      },
+      {
+        Item = "minecraft:stick",
+        Count = 2,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_fence",
+  },
+  [ "(Vanilla Pack) Craft Oak Trapdoor" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_trapdoor",
+        Count = 2,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:oak_planks",
+        Count = 6,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_trapdoor",
+  },
+  [ "(Vanilla Pack) Craft Oak Planks" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_planks",
+        Count = 4,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:oak_log",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_planks",
+  },
+  [ "(Vanilla Pack) Craft Oak Button" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_button",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:oak_planks",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_button",
+  },
+  [ "(Vanilla Pack) Craft Oak Wood" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_wood",
+        Count = 3,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_wood",
+    Inputs = {
+      {
+        Item = "minecraft:oak_log",
+        Count = 4,
+      },
+    },
+    Primary = true,
+  },
+  [ "(Vanilla Pack) Strip Oak Wood" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:stripped_oak_wood",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:oak_wood",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:stripped_oak_wood",
+  },
+  [ "(Vanilla Pack) Craft Oak Stab" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_slab",
+        Count = 6,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:oak_planks",
+        Count = 3,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_slab",
+  },
+  [ "(Vanilla Pack) Craft Oak Door" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_door",
+        Count = 3,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:oak_planks",
+        Count = 6,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_door",
+  },
+  [ "(Vanilla Pack) Craft Stripped Oak Wood" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:stripped_oak_wood",
+        Count = 3,
+      },
+    },
+    Primary = false,
+    Inputs = {
+      {
+        Item = "minecraft:stripped_oak_log",
+        Count = 4,
+      },
+    },
+    [ "Main Output" ] = "minecraft:stripped_oak_wood",
+  },
+  [ "(Vanilla Pack) Strip Oak Log" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:stripped_oak_log",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:stripped_oak_log",
+    Inputs = {
+      {
+        Item = "minecraft:oak_log",
+        Count = 1,
+      },
+    },
+    Primary = true,
+  },
+  [ "(Vanilla Pack) Craft Oak Stairs" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_stairs",
+        Count = 4,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:oak_planks",
+        Count = 6,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_stairs",
+  },
+  [ "(Vanilla Pack) Craft Oak Pressure Plate" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_pressure_plate",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:oak_planks",
+        Count = 2,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_pressure_plate",
+  },
+  [ "(Vanilla Pack) Craft Oak Fence Gate" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:oak_fence_gate",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:stick",
+        Count = 4,
+      },
+      {
+        Item = "minecraft:oak_planks",
+        Count = 2,
+      },
+    },
+    [ "Main Output" ] = "minecraft:oak_fence_gate",
+  },
+}
