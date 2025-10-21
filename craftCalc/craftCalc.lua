@@ -569,7 +569,7 @@ function API(item, amount)
 
     craftCalc(wishlist)
 
-    wishlist[item] = (leftovers[item] or 0) - amount
+    wishlist[item] = (wishlist[item] or 0) - amount
     return wishlist
 end
 
