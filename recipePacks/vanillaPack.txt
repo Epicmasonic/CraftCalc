@@ -215,4 +215,220 @@
     },
     [ "Main Output" ] = "minecraft:oak_fence_gate",
   },
+  [ "(Vanilla Pack) Craft Birch Fence" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_fence",
+        Count = 3,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:birch_planks",
+        Count = 4,
+      },
+      {
+        Item = "minecraft:stick",
+        Count = 2,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_fence",
+  },
+  [ "(Vanilla Pack) Craft Birch Trapdoor" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_trapdoor",
+        Count = 2,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:birch_planks",
+        Count = 6,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_trapdoor",
+  },
+  [ "(Vanilla Pack) Craft Birch Planks" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_planks",
+        Count = 4,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:birch_log",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_planks",
+  },
+  [ "(Vanilla Pack) Craft Birch Button" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_button",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:birch_planks",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_button",
+  },
+  [ "(Vanilla Pack) Craft Birch Wood" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_wood",
+        Count = 3,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_wood",
+    Inputs = {
+      {
+        Item = "minecraft:birch_log",
+        Count = 4,
+      },
+    },
+    Primary = true,
+  },
+  [ "(Vanilla Pack) Strip Birch Wood" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:stripped_birch_wood",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:birch_wood",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:stripped_birch_wood",
+  },
+  [ "(Vanilla Pack) Craft Birch Stab" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_slab",
+        Count = 6,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:birch_planks",
+        Count = 3,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_slab",
+  },
+  [ "(Vanilla Pack) Craft Birch Door" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_door",
+        Count = 3,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:birch_planks",
+        Count = 6,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_door",
+  },
+  [ "(Vanilla Pack) Craft Stripped Birch Wood" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:stripped_birch_wood",
+        Count = 3,
+      },
+    },
+    Primary = false,
+    Inputs = {
+      {
+        Item = "minecraft:stripped_birch_log",
+        Count = 4,
+      },
+    },
+    [ "Main Output" ] = "minecraft:stripped_birch_wood",
+  },
+  [ "(Vanilla Pack) Strip Birch Log" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:stripped_birch_log",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:stripped_birch_log",
+    Inputs = {
+      {
+        Item = "minecraft:birch_log",
+        Count = 1,
+      },
+    },
+    Primary = true,
+  },
+  [ "(Vanilla Pack) Craft Birch Stairs" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_stairs",
+        Count = 4,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:birch_planks",
+        Count = 6,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_stairs",
+  },
+  [ "(Vanilla Pack) Craft Birch Pressure Plate" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_pressure_plate",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:birch_planks",
+        Count = 2,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_pressure_plate",
+  },
+  [ "(Vanilla Pack) Craft Birch Fence Gate" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:birch_fence_gate",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:stick",
+        Count = 4,
+      },
+      {
+        Item = "minecraft:birch_planks",
+        Count = 2,
+      },
+    },
+    [ "Main Output" ] = "minecraft:birch_fence_gate",
+  },
 }
