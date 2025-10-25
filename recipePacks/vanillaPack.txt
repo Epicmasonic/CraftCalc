@@ -1,218 +1,246 @@
 {
-  [ "(Vanilla Pack) Craft Oak Fence" ] = {
+  [ "(Vanilla Pack) Craft Bookshelf" ] = {
     Outputs = {
       {
-        Item = "minecraft:oak_fence",
-        Count = 3,
+        Item = "minecraft:bookshelf",
+        Count = 1,
       },
     },
     Primary = true,
     Inputs = {
       {
-        Item = "minecraft:oak_planks",
-        Count = 4,
-      },
-      {
-        Item = "minecraft:stick",
-        Count = 2,
-      },
-    },
-    [ "Main Output" ] = "minecraft:oak_fence",
-  },
-  [ "(Vanilla Pack) Craft Oak Trapdoor" ] = {
-    Outputs = {
-      {
-        Item = "minecraft:oak_trapdoor",
-        Count = 2,
-      },
-    },
-    Primary = true,
-    Inputs = {
-      {
-        Item = "minecraft:oak_planks",
+        Item = "minecraft:#planks",
         Count = 6,
       },
-    },
-    [ "Main Output" ] = "minecraft:oak_trapdoor",
-  },
-  [ "(Vanilla Pack) Craft Oak Planks" ] = {
-    Outputs = {
       {
-        Item = "minecraft:oak_planks",
-        Count = 4,
-      },
-    },
-    Primary = true,
-    Inputs = {
-      {
-        Item = "minecraft:oak_log",
-        Count = 1,
-      },
-    },
-    [ "Main Output" ] = "minecraft:oak_planks",
-  },
-  [ "(Vanilla Pack) Craft Oak Button" ] = {
-    Outputs = {
-      {
-        Item = "minecraft:oak_button",
-        Count = 1,
-      },
-    },
-    Primary = true,
-    Inputs = {
-      {
-        Item = "minecraft:oak_planks",
-        Count = 1,
-      },
-    },
-    [ "Main Output" ] = "minecraft:oak_button",
-  },
-  [ "(Vanilla Pack) Craft Oak Wood" ] = {
-    Outputs = {
-      {
-        Item = "minecraft:oak_wood",
+        Item = "minecraft:book",
         Count = 3,
       },
     },
-    [ "Main Output" ] = "minecraft:oak_wood",
-    Inputs = {
-      {
-        Item = "minecraft:oak_log",
-        Count = 4,
-      },
-    },
-    Primary = true,
+    [ "Main Output" ] = "minecraft:bookshelf",
   },
-  [ "(Vanilla Pack) Strip Oak Wood" ] = {
+  [ "(Vanilla Pack) Craft Block of Iron" ] = {
     Outputs = {
       {
-        Item = "minecraft:stripped_oak_wood",
+        Item = "minecraft:block_of_iron",
         Count = 1,
       },
     },
     Primary = true,
     Inputs = {
       {
-        Item = "minecraft:oak_wood",
+        Item = "minecraft:iron_ingot",
+        Count = 9,
+      },
+    },
+    [ "Main Output" ] = "minecraft:block_of_iron",
+  },
+  [ "(Vanilla Pack) Dye Wool White" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:white_wool",
         Count = 1,
-      },
-    },
-    [ "Main Output" ] = "minecraft:stripped_oak_wood",
-  },
-  [ "(Vanilla Pack) Craft Oak Stab" ] = {
-    Outputs = {
-      {
-        Item = "minecraft:oak_slab",
-        Count = 6,
-      },
-    },
-    Primary = true,
-    Inputs = {
-      {
-        Item = "minecraft:oak_planks",
-        Count = 3,
-      },
-    },
-    [ "Main Output" ] = "minecraft:oak_slab",
-  },
-  [ "(Vanilla Pack) Craft Oak Door" ] = {
-    Outputs = {
-      {
-        Item = "minecraft:oak_door",
-        Count = 3,
-      },
-    },
-    Primary = true,
-    Inputs = {
-      {
-        Item = "minecraft:oak_planks",
-        Count = 6,
-      },
-    },
-    [ "Main Output" ] = "minecraft:oak_door",
-  },
-  [ "(Vanilla Pack) Craft Stripped Oak Wood" ] = {
-    Outputs = {
-      {
-        Item = "minecraft:stripped_oak_wood",
-        Count = 3,
       },
     },
     Primary = false,
     Inputs = {
       {
-        Item = "minecraft:stripped_oak_log",
-        Count = 4,
+        Item = "minecraft:#wool",
+        Count = 1,
       },
-    },
-    [ "Main Output" ] = "minecraft:stripped_oak_wood",
-  },
-  [ "(Vanilla Pack) Strip Oak Log" ] = {
-    Outputs = {
       {
-        Item = "minecraft:stripped_oak_log",
+        Item = "minecraft:white_dye",
         Count = 1,
       },
     },
-    [ "Main Output" ] = "minecraft:stripped_oak_log",
-    Inputs = {
-      {
-        Item = "minecraft:oak_log",
-        Count = 1,
-      },
-    },
-    Primary = true,
+    [ "Main Output" ] = "minecraft:white_wool",
   },
-  [ "(Vanilla Pack) Craft Oak Stairs" ] = {
+  [ "(Vanilla Pack) Craft Block of Gold" ] = {
     Outputs = {
       {
-        Item = "minecraft:oak_stairs",
-        Count = 4,
+        Item = "minecraft:block_of_gold",
+        Count = 1,
       },
     },
     Primary = true,
     Inputs = {
       {
-        Item = "minecraft:oak_planks",
+        Item = "minecraft:gold_ingot",
+        Count = 9,
+      },
+    },
+    [ "Main Output" ] = "minecraft:block_of_gold",
+  },
+  [ "(Vanilla Pack) Craft Block of Diamond" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:block_of_diamond",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:diamond",
+        Count = 9,
+      },
+    },
+    [ "Main Output" ] = "minecraft:block_of_diamond",
+  },
+  [ "(Vanilla Pack) Craft Mossy Cobblestone (Moss Block)" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:mossy_cobblestone",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:mossy_cobblestone",
+    Inputs = {
+      {
+        Item = "minecraft:cobblestone",
+        Count = 1,
+      },
+      {
+        Item = "minecraft:moss_block",
+        Count = 1,
+      },
+    },
+    Primary = true,
+  },
+  [ "(Vanilla Pack) Craft Bricks" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:bricks",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:brick",
+        Count = 4,
+      },
+    },
+    [ "Main Output" ] = "minecraft:bricks",
+  },
+  [ "(Vanilla Pack) Craft Jack O'Lantern" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:jack_o_lantern",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:jack_o_lantern",
+    Inputs = {
+      {
+        Item = "minecraft:carved_pumpkin",
+        Count = 1,
+      },
+      {
+        Item = "minecraft:torch",
+        Count = 1,
+      },
+    },
+    Primary = true,
+  },
+  [ "(Vanilla Pack) Craft Clay" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:clay",
+        Count = 1,
+      },
+    },
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:clay_ball",
+        Count = 4,
+      },
+    },
+    [ "Main Output" ] = "minecraft:clay",
+  },
+  [ "(Vanilla Pack) Craft Stone Slab" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:stone_slab",
         Count = 6,
       },
     },
-    [ "Main Output" ] = "minecraft:oak_stairs",
+    Primary = true,
+    Inputs = {
+      {
+        Item = "minecraft:stone",
+        Count = 3,
+      },
+    },
+    [ "Main Output" ] = "minecraft:stone_slab",
   },
-  [ "(Vanilla Pack) Craft Oak Pressure Plate" ] = {
+  [ "(Vanilla Pack) Craft Snow Block" ] = {
     Outputs = {
       {
-        Item = "minecraft:oak_pressure_plate",
+        Item = "minecraft:snow_block",
         Count = 1,
       },
     },
     Primary = true,
     Inputs = {
       {
-        Item = "minecraft:oak_planks",
-        Count = 2,
-      },
-    },
-    [ "Main Output" ] = "minecraft:oak_pressure_plate",
-  },
-  [ "(Vanilla Pack) Craft Oak Fence Gate" ] = {
-    Outputs = {
-      {
-        Item = "minecraft:oak_fence_gate",
-        Count = 1,
-      },
-    },
-    Primary = true,
-    Inputs = {
-      {
-        Item = "minecraft:stick",
+        Item = "minecraft:snowball",
         Count = 4,
       },
+    },
+    [ "Main Output" ] = "minecraft:snow_block",
+  },
+  [ "(Vanilla Pack) Craft Glowstone" ] = {
+    Outputs = {
       {
-        Item = "minecraft:oak_planks",
-        Count = 2,
+        Item = "minecraft:glowstone",
+        Count = 1,
       },
     },
-    [ "Main Output" ] = "minecraft:oak_fence_gate",
+    [ "Main Output" ] = "minecraft:glowstone",
+    Inputs = {
+      {
+        Item = "minecraft:glowstone_dust",
+        Count = 4,
+      },
+    },
+    Primary = true,
+  },
+  [ "(Vanilla Pack) Craft Wool" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:white_wool",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:white_wool",
+    Inputs = {
+      {
+        Item = "minecraft:string",
+        Count = 4,
+      },
+    },
+    Primary = true,
+  },
+  [ "(Vanilla Pack) Craft Mossy Cobblestone" ] = {
+    Outputs = {
+      {
+        Item = "minecraft:mossy_cobblestone",
+        Count = 1,
+      },
+    },
+    Primary = false,
+    Inputs = {
+      {
+        Item = "minecraft:cobblestone",
+        Count = 1,
+      },
+      {
+        Item = "minecraft:vines",
+        Count = 1,
+      },
+    },
+    [ "Main Output" ] = "minecraft:mossy_cobblestone",
   },
 }
