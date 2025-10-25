@@ -217,7 +217,7 @@ end
 
 function itemInput()
     ::start::
-    local input = limitedTextInput({"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ","_",":"}, "Input must be a valid Minecraft item ID.", defaultNumber)
+    local input = limitedTextInput({"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," ","_",":","#"}, "Input must be a valid Minecraft item ID.", defaultNumber)
 
     if (select(2, string.gsub(input, ":", "")) > 1 or (string.match(input, "^:") or string.match(input, ":$"))) then
     	basic.errorMessage("Input must be a valid Minecraft item ID.")
@@ -302,3 +302,4 @@ return {
     basic = basic
 
 }
+
