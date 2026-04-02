@@ -1,7 +1,18 @@
 --- @diagnostic disable: undefined-global, undefined-field, lowercase-global
 
--- Uncomment this line when testing with mindbg
--- package.path = package.path .. ";/craftCalc/?.lua;/craftCalc/?/init.lua"
+-- This code is AI generated
+local function getDir()
+    local source = debug.getinfo(1, "S").source
+    if source:sub(1,1) == "@" then
+        source = source:sub(2)
+    end
+    local dir = source:match("(.*/)")
+    return dir or "./"
+end
+
+local dir = getDir()
+package.path = package.path .. ";" .. dir .. "?.lua;" .. dir .. "?/init.lua"
+-- AI code stops here
 
 local data = require("functions.dataHandling")
 local ui = require("functions.ui")
@@ -569,7 +580,7 @@ function API(item, amount)
 
     craftCalc(wishlist)
 
-    wishlist[item] = (wishlist[item] or 0) - amount
+    wishlist[item] = (0 or leftovers[item]) - amount
     return wishlist
 end
 
@@ -581,8 +592,12 @@ else
     data.saveData(recipes, saveFile)
 end
 
-mainMenu()
-ui.basic.clearScreen(1 / textSpeed)
+-- This if statement was also added by AI (It should check if the file is being called by someone else)
+if not debug.getinfo(2) then
+    -- The contents of the if statement are not AI though! :)
+    mainMenu()
+    ui.basic.clearScreen(1 / textSpeed)
+end
 
 return {
     craftCalc = API
