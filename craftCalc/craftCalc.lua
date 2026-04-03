@@ -592,9 +592,7 @@ else
     data.saveData(recipes, saveFile)
 end
 
--- This if statement was also added by AI (It should check if the file is being called by someone else)
-if not debug.getinfo(2) then
-    -- The contents of the if statement are not AI though! :)
+if shell.getRunningProgram() == "craftCalc/craftCalc.lua" then
     mainMenu()
     ui.basic.clearScreen(1 / textSpeed)
 end
